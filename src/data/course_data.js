@@ -337,7 +337,7 @@ const courses = [
 {
   key: "r20cbsem5",
   Regulations: "R20",
-  Branch: "CB",
+  Branch: "CSBS",
   Semester: "sem 5",
   data: {
     courses: [
@@ -357,7 +357,7 @@ const courses = [
 {
   key: "r20cbsem3",
   Regulations: "R20",
-  Branch: "CB",
+  Branch: "CSBS",
   Semester: "sem 3",
   data: {
     courses: [
@@ -377,7 +377,7 @@ const courses = [
 {
   key: "r20cbsem1",
   Regulations: "R20",
-  Branch: "CB",
+  Branch: "CSBS",
   Semester: "sem 1",
   data: {
     courses: [
