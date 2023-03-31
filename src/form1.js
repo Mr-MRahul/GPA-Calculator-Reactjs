@@ -1,14 +1,17 @@
 import React from 'react';
-import regulations_data from './data_regulations';
-import sem_data from "./sem_data"
-import branch_data from "./branch_data"
+import regulations_data from './data/data_regulations';
+import sem_data from "./data/sem_data"
+import branch_data from "./data/branch_data"
 import FormDown from './form2';
+import "./App_new.scss"
+
+
 
 export default function FormUp(){
 
   function mapper(item){
     return (
-      <option value={item.value} label={item.label}></option>
+      <option value={item.value} label={item.label} key={item.key+"xx"}></option>
     )
   }
 
@@ -33,6 +36,7 @@ export default function FormUp(){
     ) {
       down = (
         <FormDown
+
           Regulations={formData.Regulations}
           Branch={formData.Branch}
           Semester={formData.Semester}
@@ -42,7 +46,7 @@ export default function FormUp(){
 
     function handleEvent(event){
         const {name,value,type,checked}=event.target
-        console.log(event.target)
+        // console.log(event.target)
         setFormData(oldFormData=>{
             return(
                 {
@@ -56,38 +60,46 @@ export default function FormUp(){
 
     return (
       <form>
-        <select
-          id="regulations"
-          value={formData.Regulations}
-          onChange={handleEvent}
-          name="Regulations"
-        >
-          {reg}
-        </select>
+        <p className='text'  style={{"position":"relative","left":"0.6em"}}>Choose the Options</p>
+        <div className='up'>
+        <div className="select">
+          <select
+            id="regulations"
+            value={formData.Regulations}
+            onChange={handleEvent}
+            name="Regulations"
+          >
+            {reg}
+          </select>
+        </div>
 
-        <select
-          id="sem"
-          value={formData.Semester}
-          onChange={handleEvent}
-          name="Semester"
-        >
-          {sem}
-        </select>
+        <div className="select">
+          <select
+            id="sem"
+            value={formData.Semester}
+            onChange={handleEvent}
+            name="Semester"
+          >
+            {sem}
+          </select>
+        </div>
 
-        <select
-          id="branch"
-          value={formData.Branch}
-          onChange={handleEvent}
-          name="Branch"
-        >
-          {branch}
-        </select>
+        <div className="select">
+          <select
+            id="branch"
+            value={formData.Branch}
+            onChange={handleEvent}
+            name="Branch"
+          >
+            {branch}
+          </select>
+        </div>
+</div>
 
-
-        
+<div className='down'>
         {down}
-
-
+</div>
+  
       </form>
     );
 }
