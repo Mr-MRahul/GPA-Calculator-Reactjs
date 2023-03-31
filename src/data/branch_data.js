@@ -5,6 +5,10 @@ const branch_data = [
       { value: 'CSBS', label: 'CSBS' ,key:'CSBS'},
       { value: 'ECE', label: 'ECE' ,key:'ECE'},
       { value: 'EEE', label: 'EEE' ,key:'EEE'},
+      { value: 'ME', label: 'ME' ,key:'ME'},  
+      { value: 'CE', label: 'CE' ,key:'CE'},      
+      { value: 'CH', label: 'CH' ,key:'CH'},      
+
     ];
   
   export default branch_data

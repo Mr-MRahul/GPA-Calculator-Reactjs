@@ -1,5 +1,45 @@
 const courses = [
   {
+    key: "r20csesem4",
+    Regulations: "R20",
+    Branch: "CSE",
+    Semester: "sem 4",
+    data: {
+      courses: [
+        "cs221",
+        "cs222",
+        "cs223",
+        "cs224",
+        "cs225",
+        "cs261",
+        "cs262",
+        "cs263",
+        "CSSL2"
+      ],
+      credits: [3, 3, 3, 3, 3, 1.5, 1.5, 1.5, 2],
+    },
+  },
+  {
+    key: "r20itsem4",
+    Regulations: "R20",
+    Branch: "IT",
+    Semester: "sem 4",
+    data: {
+      courses: [
+        "it221",
+        "it222",
+        "it223",
+        "it224",
+        "it225",
+        "it261",
+        "it262",
+        "it263",
+        "itSL2"
+      ],
+      credits: [3, 3, 3, 3, 3, 1.5, 1.5, 1.5, 2],
+    },
+  },
+  {
     key: "r20csesem5",
     Regulations: "R20",
     Branch: "CSE",
@@ -176,7 +216,184 @@ const courses = [
     ],
     credits: [3, 3, 3, 3, 3, 1.5, 1.5, 1.5, 2],
   }
-}
+},
+{
+  key: "r20eeesem5",
+  Regulations: "R20",
+  Branch: "EEE",
+  Semester: "sem 5",
+  data: {
+    courses: [
+      "ee311",
+      "ee312",
+      "ee313",
+      "ee314",
+      "ee315",
+      "ee351",
+      "ee352",
+      "ee353",
+      "eesl3"
+    ],
+    credits: [3, 3, 3, 3, 3, 1.5, 1.5, 1.5, 2],
+  },
+},
+{
+  key: "r20eeesem3",
+  Regulations: "R20",
+  Branch: "EEE",
+  Semester: "sem 3",
+  data: {
+    courses: [
+      "ee211",
+      "ee212",
+      "ee213",
+      "ee214",
+      "ee215",
+      "ee251",
+      "ee252",
+      "ee253",
+      "eeSL1"
+    ],
+    credits: [3, 3, 3, 3, 3, 1.5, 1.5, 1.5, 2],
+  },
+},
+{
+  key: "r20eeesem1",
+  Regulations: "R20",
+  Branch: "EEE",
+  Semester: "sem 1",
+  data: {
+    courses: [
+      "ee111",
+      "ee112",
+      "ee113",
+      "ee114",
+      "ee151",
+      "ee152",
+      "ee153"
+    ],
+    credits: [3, 3, 3, 3, 1.5, 1.5, 3, 1.5],
+  },
+},
+{
+  key: "r20mesem5",
+  Regulations: "R20",
+  Branch: "ME",
+  Semester: "sem 5",
+  data: {
+    courses: [
+      "me311",
+      "me312",
+      "me313",
+      "me314",
+      "me315",
+      "me351",
+      "me352",
+      "me353",
+      "meSL3"
+    ],
+    credits: [3, 3, 3, 3, 3, 1.5, 1.5, 1.5, 2],
+  },
+},
+{
+  key: "r20mesem3",
+  Regulations: "R20",
+  Branch: "ME",
+  Semester: "sem 3",
+  data: {
+    courses: [
+      "me211",
+      "me212",
+      "me213",
+      "me214",
+      "me215",
+      "me251",
+      "me252",
+      "me253",
+      "meSL1"
+    ],
+    credits: [3, 3, 3, 3, 3, 1.5, 1.5, 1.5, 2],
+  },
+},
+{
+  key: "r20mesem1",
+  Regulations: "R20",
+  Branch: "ME",
+  Semester: "sem 1",
+  data: {
+    courses: [
+      "me111",
+      "me112",
+      "me113",
+      "me114",
+      "me151",
+      "me152",
+      "me153",
+      "me154"
+    ],
+    credits: [3, 3, 3, 3, 1.5, 1.5, 3, 1.5],
+  },
+},
+{
+  key: "r20cbsem5",
+  Regulations: "R20",
+  Branch: "CB",
+  Semester: "sem 5",
+  data: {
+    courses: [
+      "cb311",
+      "cb312",
+      "cb313",
+      "cb314",
+      "cb315",
+      "cb351",
+      "cb352",
+      "cb353",
+      "cbSL3"
+    ],
+    credits: [3, 3, 3, 3, 3, 1.5, 2, 1.5, 2],
+  },
+},
+{
+  key: "r20cbsem3",
+  Regulations: "R20",
+  Branch: "CB",
+  Semester: "sem 3",
+  data: {
+    courses: [
+      "cb211",
+      "cb212",
+      "cb213",
+      "cb214",
+      "cb215",
+      "cb251",
+      "cb252",
+      "cb253",
+      "cbSL1"
+    ],
+    credits: [3, 3, 3, 3, 3, 1.5, 1.5, 1.5, 2],
+  },
+},
+{
+  key: "r20cbsem1",
+  Regulations: "R20",
+  Branch: "CB",
+  Semester: "sem 1",
+  data: {
+    courses: [
+      "cb111",
+      "cb112",
+      "cb113",
+      "cb114",
+      "cb115",
+      "cb151",
+      "cb152",
+      "cb153",
+      "cb154"
+    ],
+    credits: [3, 3, 3, 3, 3, 1, 1, 1, 1.5],
+  },
+},
 ];
 
 export default courses

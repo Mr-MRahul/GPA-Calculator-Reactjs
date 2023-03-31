@@ -16,6 +16,7 @@ export default function FormDown(props) {
     }
 
     gpa=gpa/(credits.reduce((a, b) => a + b, 0))
+
     return gpa
   }
 
@@ -30,17 +31,31 @@ export default function FormDown(props) {
       item.Semester === Semester &&
       item.Branch === Branch
     ) {
+      
       return item;
     }
   }
 
+  function val_grade(grade){
+    switch(grade){
+      case "A+": return 10;
+      case "A": return 9;
+      case "B": return 8;
+      case "C": return 7;
+      case "D": return 6;
+      case "E": return 5;
+      case "F": return 0;
+      default:return 0;
+    }
+  }
+
   function option_mapper(item) {
-    return <option value={item} label={item} key={item+'y'}></option>;
+    return <option value={val_grade(item)} label={item} key={item+'y'}></option>;
   }
 
   function select_mapper(item) {
 
-    const score = ['choose',10,9,8,7,6,5,4,3,2,1]
+    const score = ['choose',"A+","A","B","C","D","E","F"]
     const options =  score.map(option_mapper)
 
 
@@ -62,12 +77,20 @@ export default function FormDown(props) {
     )
   }
 
-  const course = courses.find(checkItem).data;      //to retrieve course details and credits details
-  const courses_d = course.courses
-  const credits = course.credits
+  var course,courses_d,credits,select_courses;
 
-  const select_courses = courses_d.map(select_mapper)  //to create course_options
+  try{
+  course = courses.find(checkItem).data;      //to retrieve course details and credits details
+  courses_d = course.courses
+  credits = course.credits
   
+  select_courses = courses_d.map(select_mapper)  //to create course_options
+  
+}catch(err){
+  return(
+    <p className="text1" height="1px">* <strong>CH & CE</strong> databases are corrupted<br></br>& <strong>SEM (2,4,6)</strong> details are not uploaded</p>
+  )
+}
   function handleEvent(e){
     const {name,value} = e.target
 
@@ -91,11 +114,13 @@ export default function FormDown(props) {
       {select_courses}
       <p
         className="text1 enter"
-        onClick={() => {
-          if (Object.keys(scores).length === credits.length) {
-            handleClick();
-          }
-        }}
+        // onClick={() => {
+          
+        //   if (Object.keys(scores).length === credits.length) {
+        //     handleClick();
+        //   }
+        // }}
+        onClick={handleClick}
       >
         Enter
       </p>
