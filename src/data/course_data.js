@@ -117,6 +117,66 @@ const courses = [
       credits: [3, 3, 3, 3, 3, 1.5, 2, 1.5, 2],
     },
   },
+  
+{
+  key: "r20itsem5",
+  Regulations: "R20",
+  Branch: "IT",
+  Semester: "sem 5",
+  data: {
+    courses: [
+      "it311",
+      "it312",
+      "it313",
+      "it314",
+      "it315",
+      "it351",
+      "it352",
+      "it353",
+      "itSL3"
+    ],
+    credits: [3, 3, 3, 3, 3, 1.5, 1.5, 1.5, 2],
+  }
+},
+{
+  key: "r20itsem1",
+  Regulations: "R20",
+  Branch: "IT",
+  Semester: "sem 1",
+  data: {
+    courses: [
+      "it111",
+      "it112",
+      "it113",
+      "it114",
+      "it151",
+      "it152",
+      "it153",
+      "it154"
+    ],
+    credits: [3, 3, 3, 3, 1.5, 1.5, 3, 1.5],
+  }
+},
+{
+  key: "r20itsem3",
+  Regulations: "R20",
+  Branch: "IT",
+  Semester: "sem 3",
+  data: {
+    courses: [
+      "it211",
+      "it212",
+      "it213",
+      "it214",
+      "it215",
+      "it251",
+      "it252",
+      "it253",
+      "itSL1"
+    ],
+    credits: [3, 3, 3, 3, 3, 1.5, 1.5, 1.5, 2],
+  }
+}
 ];
 
 export default courses
