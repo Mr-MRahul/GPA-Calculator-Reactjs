@@ -1,5 +1,7 @@
 import React from "react"
-import courses from "./course_data";
+import courses from "./data/course_data";
+import "./App_new.scss"
+
 
 export default function FormDown(props) {
   const { Branch, Semester, Regulations } = props;

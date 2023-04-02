@@ -85,20 +85,22 @@ export default function FormUp(){
           </select>
         </div>
 
-        <select
-          id="branch"
-          value={formData.Branch}
-          onChange={handleEvent}
-          name="Branch"
-        >
-          {branch}
-        </select>
+        <div className="select">
+          <select
+            id="branch"
+            value={formData.Branch}
+            onChange={handleEvent}
+            name="Branch"
+          >
+            {branch}
+          </select>
+        </div>
+</div>
 
-
-        
+<div className='down'>
         {down}
-
-
+</div>
+  
       </form>
     );
 }
