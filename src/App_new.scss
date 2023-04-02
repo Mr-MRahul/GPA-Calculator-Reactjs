@@ -1,0 +1,101 @@
+$glass: rgba(255, 255, 255, 0.2);
+$glass-icon: rgba(255, 255, 255, 0.3);
+$gradient: linear-gradient(35deg, red, purple);
+$option: #320a28;
+
+ body{
+  background: $gradient no-repeat;
+  height : 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: visible;
+}
+
+.up{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.down{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text{
+  // font-family:'Courier New', Courier, monospace;
+  font-family: "Gloria Hallelujah";
+  color:#FFEAEA;
+  text-align:center;
+}
+
+.text1{
+  // font-family: 'Courier New', Courier, monospace;
+  font-family: "Architects Daughter";
+  color:#F5C6EC;
+}
+
+h1{
+  font-family: "Gloria Hallelujah";
+  color:#FFEAEA;
+}
+
+.enter:hover{
+  cursor: pointer;
+
+}
+.enter{
+  // background:$glass;
+  background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 0.3em 1em;
+  position:relative;
+  left:0.55em;
+}
+
+/* <select> styles */
+select {
+  /* Reset */
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font-family: Gloria Hallelujah;
+  /* Personalize */
+  margin: 0px 0px 10px 20px;
+  width: 10em;
+  height: 2em;
+  padding: 0 4em 0 1em;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+      no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left, $glass-icon 3em, $glass 3em);
+  color: white;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  /* <option> colors */
+  option {
+    color: inherit;
+    background-color: $option;
+  }
+  /* Remove focus outline */
+  &:focus {
+    outline: none;
+  }
+  /* Remove IE arrow */
+  &::-ms-expand {
+    display: none;
+  }
+}
