@@ -19,22 +19,22 @@ export default function FormUp(){
    const sem = sem_data.map(mapper)
    const branch = branch_data.map(mapper)
 
-  var down = "";
-
-    const [formData,setFormData]=React.useState(
-        {
-            "Regulations":"",
-            "Semester":"",
-            "Branch":"",
-        }
-    )
-    
+  const [down,setDown] = React.useState("")
+  const [formData,setFormData]=React.useState(
+      {
+          "Regulations":"",
+          "Semester":"",
+          "Branch":"",
+      }
+  )
+  
+  React.useEffect(()=>{
     if (
       formData.Branch !== "" &&
       formData.Regulations !== "" &&
       formData.Semester !== ""
-    ) {
-      down = (
+      ) {
+      setDown (
         <FormDown
 
           Regulations={formData.Regulations}
@@ -43,6 +43,9 @@ export default function FormUp(){
         />
       );
     }
+    // console.log("rahul")
+  },[formData])
+
 
     function handleEvent(event){
         const {name,value,type,checked}=event.target
@@ -55,7 +58,7 @@ export default function FormUp(){
                 }
             )
         }
-        )  
+        )
     }
 
     return (
@@ -102,5 +105,7 @@ export default function FormUp(){
 </div>
   
       </form>
+      </>
     );
 }
+
