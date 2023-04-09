@@ -394,6 +394,65 @@ const courses = [
     credits: [3, 3, 3, 3, 3, 1, 1, 1, 1.5],
   },
 },
+{
+  key: "r20cesem1",
+  Regulations: "R20",
+  Branch: "CE",
+  Semester: "sem 1",
+  data: {
+    courses: [
+      "ce111",
+      "ce112",
+      "ce113",
+      "ce114",
+      "ce151",
+      "ce152",
+      "ce153",
+      "ce154"
+    ],
+    credits: [3, 3, 3, 3, 1.5, 1.5, 3, 1.5],
+  },
+},
+{
+  key: "r20cesem3",
+  Regulations: "R20",
+  Branch: "CE",
+  Semester: "sem 3",
+  data: {
+    courses: [
+      "ce211",
+      "ce212",
+      "ce213",
+      "ce214",
+      "ce215",
+      "ce251",
+      "ce252",
+      "ce253",
+      "ceSL1"
+    ],
+    credits: [3, 3, 3, 3, 3,1.5, 1.5, 1.5, 2],
+  },
+},
+{
+  key: "r20cesem5",
+  Regulations: "R20",
+  Branch: "CE",
+  Semester: "sem 5",
+  data: {
+    courses: [
+      "ce311",
+      "ce312",
+      "ce313",
+      "ce314",
+      "ce315",
+      "ce351",
+      "ce352",
+      "ce353",
+      "ceSL3"
+    ],
+    credits: [3, 3, 3, 3, 3, 1.5, 1.5, 1.5, 2],
+  },
+},
 ];
 
 

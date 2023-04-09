@@ -1,6 +1,7 @@
 import React from "react"
 import courses from "./data/course_data";
 import "./App_new.scss"
+import ReactScrollableFeed from "react-scrollable-feed"
 
 export default function FormDown(props) {
 
@@ -12,7 +13,7 @@ export default function FormDown(props) {
   const [sgpa,setSgpa] = React.useState(10)
   
   React.useEffect(()=>{
-    console.log(scores)
+    // console.log(scores)
     setSgpa(cal_gpa())
   },[scores])
   

@@ -6,7 +6,6 @@ import FormDown from './form2';
 import "./App_new.scss"
 
 
-
 export default function FormUp(){
 
   function mapper(item){
@@ -19,6 +18,7 @@ export default function FormUp(){
    const sem = sem_data.map(mapper)
    const branch = branch_data.map(mapper)
 
+  const form_ref = React.useRef(null)
   const [down,setDown] = React.useState("")
   const [formData,setFormData]=React.useState(
       {
@@ -42,6 +42,7 @@ export default function FormUp(){
           Semester={formData.Semester}
         />
       );
+      form_ref.current?.scrollIntoView({behavior : 'smooth',block : 'center'})
     }
     // console.log("rahul")
   },[formData])
@@ -63,7 +64,7 @@ export default function FormUp(){
 
     return (
       <>
-      <form>
+      <form >
         <p className='text'  style={{"position":"relative","left":"0.6em"}}>Choose the Options</p>
         <div className='up'>
         <div className="select">
@@ -100,7 +101,7 @@ export default function FormUp(){
         </div>
 </div>
 
-<div className='down'>
+<div className='down' ref={form_ref}>
         {down}
 </div>
   

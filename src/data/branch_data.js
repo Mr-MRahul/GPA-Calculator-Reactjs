@@ -7,7 +7,7 @@ const branch_data = [
       { value: 'EEE', label: 'EEE' ,key:'EEE'},
       { value: 'ME', label: 'ME' ,key:'ME'},  
       { value: 'CE', label: 'CE' ,key:'CE'},      
-      { value: 'CH', label: 'CH' ,key:'CH'},      
+      // { value: 'CH', label: 'CH' ,key:'CH'},      
 
     ];
   
